@@ -6,7 +6,7 @@ type MainCardContainerProps = HTMLAttributes<HTMLElement> & {
 
 const MainCardContainer = ({ children, className = '', ...props }: MainCardContainerProps) => {
     return (
-        <section className={className} {...props}>
+        <section className={`flex flex-col gap-[34px] items-center justify-center ${className}`} {...props}>
             {children}
         </section>
     );

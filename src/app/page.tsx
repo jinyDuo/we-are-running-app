@@ -6,6 +6,8 @@ import MainFilter from "@/components/features/filter/MainFilter";
 import SubFilter from "@/components/features/filter/SubFilter";
 import MainFilterContainer from "@/components/features/filter/MainFilterContainer";
 import MainCardContainer from "@/components/features/home/MainCardContainer";
+import Icon from "@/constants/Icon";
+import Card from "@/components/ui/Card";
 
 const Home = () => {
   return (
@@ -17,13 +19,17 @@ const Home = () => {
               <MainFilter />
               <SubFilter/>
           </MainFilterContainer>
-          <figure>
+          <figure className='flex items-center justify-center gap-[8px] py-[28px]'>
+              <div>
+                  <Icon.Arrow className='text-blue10'/>
+              </div>
               <h1>2025</h1>
+              <div>
+                  <Icon.Arrow className='text-blue10 rotate-180'/>
+              </div>
           </figure>
           <MainCardContainer>
-              <div className='flex w-full max-w-[390px] px-[16px]'>
-                  <h2>대회</h2>
-              </div>
+            <Card/>
           </MainCardContainer>
       </Main>
       <Footer />
