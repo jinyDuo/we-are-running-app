@@ -1,0 +1,44 @@
+
+@import "tailwindcss";
+@tailwind utilities;
+
+/* Pretendard 웹폰트 선언 (CDN) */
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/woff2/PretendardVariable.woff2") format("woff2-variations");
+}
+
+:root {
+  --background: #F5F5F5;
+  --foreground: #232323;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Pretendard", system-ui, -apple-system, Segoe UI, Roboto, Noto Sans,
+    Ubuntu, Cantarell, Helvetica Neue, Arial, "Apple SD Gothic Neo",
+    "Noto Sans CJK KR", "Malgun Gothic", "Nanum Gothic", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* 유틸 클래스에서 사용할 전역 폰트 클래스 */
+  --font-pretendard: var(--font-sans);
+
+  /* 커스텀 컬러/쉐도우 추가 */
+  --color-blue10: #095EF1;
+  --color-green10: #BFF109;
+  --shadow-custom-card: 4px 4px 10px 0px rgba(0, 0, 0, 0.07);
+}
+
+/* 항상 라이트 테마 유지 (다크 모드 무시) */
+
+.font-pretendard { font-family: var(--font-sans); }
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
