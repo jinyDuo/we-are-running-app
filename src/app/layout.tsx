@@ -1,4 +1,4 @@
-import "@/styles/globals.css";
+import "@/shared/styles/globals.css";
 import type { Metadata } from "next";
 // Pretendard는 글로벌 CSS에서 선언하여 사용합니다
 

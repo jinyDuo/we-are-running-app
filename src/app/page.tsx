@@ -1,13 +1,13 @@
-import MainBanner from '@/components/layout/banner/MainBanner';
-import Footer from "@/components/layout/Footer";
-import Header from "@/components/layout/Header";
-import Main from "@/components/layout/Main";
-import MainFilter from "@/components/features/filter/MainFilter";
-import SubFilter from "@/components/features/filter/SubFilter";
-import MainFilterContainer from "@/components/features/filter/MainFilterContainer";
-import MainCardContainer from "@/components/features/home/MainCardContainer";
-import Icon from "@/constants/Icon";
-import Card from "@/components/ui/Card";
+import MainBanner from '@/widgets/banner/MainBanner';
+import Footer from "@/widgets/footer/Footer";
+import Header from "@/widgets/header/Header";
+import Main from "@/widgets/main/Main";
+import MainFilter from "@/features/filter/MainFilter";
+import SubFilter from "@/features/filter/SubFilter";
+import MainFilterContainer from "@/features/filter/MainFilterContainer";
+import MainCardContainer from "@/features/home/MainCardContainer";
+import Icon from "@/shared/constants/Icon";
+import Card from "@/shared/ui/Card";
 
 const Home = () => {
   return (
