@@ -1,0 +1,1 @@
+export type Race = { id: string; name: string; date: string; location: string; distanceKm: number; }; export type Runner = { id: string; name: string; age: number; gender: 'M' | 'F' | 'O'; }; export type Result = { id: string; raceId: string; runnerId: string; timeSec: number; position: number; };

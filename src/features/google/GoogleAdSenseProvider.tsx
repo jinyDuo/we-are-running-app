@@ -1,4 +1,4 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
 
 type GoogleAdSenseProviderProps = {
     children?: ReactNode;
@@ -18,7 +18,7 @@ const GoogleAdSenseProvider = ({ children }: GoogleAdSenseProviderProps) => {
     //     document.head.appendChild(script);
     // }, []);
 
-    return {children};
+    return children;
 };
 
 export default GoogleAdSenseProvider;
